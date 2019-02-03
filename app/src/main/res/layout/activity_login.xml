@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.LoginActivity"
+    android:background="@drawable/registration_bg_x1">
+
+
+    <ImageView
+        android:id="@+id/loading_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:transitionName="robot"
+        android:src="@drawable/splash_logo"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rlLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:alpha="0"
+        android:layout_marginTop="300dp" >
+
+        <TextView
+            android:id="@+id/tvGoogleLogin"
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="LOGIN WITH GOOGLE"
+            android:textColor="@android:color/black"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/round_white_textview"/>
+
+        <TextView
+            android:id="@+id/tvNormalUser"
+            android:layout_below="@+id/tvGoogleLogin"
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginBottom="20dp"
+            android:text="CONTINUE AS GUEST"
+            android:textColor="@android:color/black"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:background="@drawable/round_white_textview"/>
+
+        <ImageView
+            android:id="@+id/ivAvatar"
+            android:layout_below="@+id/tvNormalUser"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:adjustViewBounds="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/avatar_menu"/>
+
+        <TextView
+            android:id="@+id/tvNormalUserLogout"
+            android:layout_below="@+id/ivAvatar"
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginBottom="20dp"
+            android:text="LOGOUT"
+            android:textColor="@android:color/black"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:background="@drawable/round_white_textview"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
